@@ -1,0 +1,26 @@
+enum Student{
+    MATHS(80),
+    PHYSICS(70),
+    CHEMISTRY(50);
+
+     int marks;
+
+    Student(int marks) {
+        this.marks=marks;
+    }
+
+    public boolean result() {
+        return marks>35;
+    }
+}
+
+public class enumDemo {
+
+    public static void main(String[] args) {
+
+        Student s=Student.MATHS;
+        for(Student s1:Student.values()){
+            System.out.println(s1+" "+s1.result());
+        }
+    }
+}
