@@ -1,0 +1,12 @@
+
+public class UserInput {
+    public static void main(String[] args) throws IOException {
+        int a=20;
+        int b=10;
+
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter a number");
+        int num=Integer.parseInt(br.readLine());
+        System.out.println(num);
+    }
+}
