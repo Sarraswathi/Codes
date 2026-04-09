@@ -1,0 +1,31 @@
+StringsDemo {
+
+    public static void main(String[] args) {
+
+        List<String> list= Arrays.asList("Java","Python","C++");
+        String result=String.join("-",list);
+        System.out.println(result);
+
+        /*String name="Hi ".repeat(5);
+        System.out.println(name);
+
+        //String text="{\n"+"\"name\":\"Java\"\n"+"}";
+
+        String text= """
+                SELECT *
+                FROM Tutorial.Students
+                WHERE marks>35
+                """;
+        System.out.println(text);*/
+
+        String s=" ";
+        System.out.println(s.isEmpty());//false
+        System.out.println(s.isBlank());
+
+        int num=100;
+        String res=String.valueOf(num);
+        System.out.println(res);
+
+
+    }
+}
