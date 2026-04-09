@@ -1,0 +1,10 @@
+public class ToStringDemo {
+
+    public static void main(String[] args) {
+        //Tutorial.com.college1.com.college2.Student s = new Tutorial.com.college1.com.college2.Student();
+       // System.out.println(s);
+
+        List<String> list= Arrays.asList("Java","Python");
+        System.out.println(list);
+    }
+}
