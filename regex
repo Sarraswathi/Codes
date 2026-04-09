@@ -1,0 +1,10 @@
+public class RegexDemo {
+
+    public static void main(String[] args) {
+
+        Pattern pattern=Pattern.compile("\\d+");
+        Matcher matcher=pattern.matcher("12345abc");
+
+        System.out.println(matcher.find());
+    }
+}
