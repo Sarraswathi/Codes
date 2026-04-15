@@ -1,0 +1,19 @@
+class Calc {
+    final void print() {
+    }
+}
+
+class AdvCalc extends Calc {
+    // Cannot override because print() is final in Calc
+    /*
+    void print() {
+    }
+    */
+}
+
+public class FinalDemo {
+
+    public static void main(String[] args) {
+
+    }
+}
