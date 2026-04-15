@@ -1,0 +1,15 @@
+class MyThread implements Runnable {
+    public void run() {
+        System.out.println("Runnable Interface");
+    }
+}
+
+public class ThreadsDemo {
+    public static void main(String[] args) {
+
+        MyThread threads = new MyThread();
+        Thread t1 = new Thread(threads);
+
+        t1.start();
+    }
+}
