@@ -1,0 +1,19 @@
+class Animal{
+    void sound(){
+        System.out.println("Different voices of Animals");
+    }
+}
+
+class Dog extends Animal{
+    void sound(){
+        System.out.println("Dog Barks");
+    }
+}
+
+public class RunTimePolymorphism {
+    public static void main(String[] args) {
+
+        Dog d=new Dog();
+        d.sound();
+    }
+}
