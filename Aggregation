@@ -1,0 +1,26 @@
+class Employee{
+    String name;
+    Employee(String name){
+        this.name=name;
+    }
+}
+class Department{
+    Employee emp;
+    Department(Employee emp){
+        this.emp=emp;
+    }
+
+    void showEmployee(){
+        System.out.println(emp.name);
+    }
+
+}
+public class AggregationDemo {
+    public static void main(String[] args) {
+
+        Employee emp=new Employee("Tara");
+        Department d=new Department(emp);
+        d.showEmployee();
+
+    }
+}
