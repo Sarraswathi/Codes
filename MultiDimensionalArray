@@ -1,0 +1,18 @@
+public class Arrays {
+
+    public static void main(String[] args) {
+
+        int arr[][] = new int[3][];
+
+        arr[0] = new int[3];
+        arr[1] = new int[2];
+        arr[2] = new int[4];
+
+        for (int[] row : arr) {
+            for (int value : row) {
+                System.out.print(value + " ");
+            }
+            System.out.println();
+        }
+    }
+}
