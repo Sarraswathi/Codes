@@ -1,26 +1,48 @@
-enum Student{
-    MATHS(80),
-    PHYSICS(70),
-    CHEMISTRY(50);
+enum TrafficSignal {
+    RED,
+    YELLOW,
+    GREEN
+}
 
-     int marks;
+public class EnumDemo {
+    public static void main(String[] args) {
 
-    Student(int marks) {
-        this.marks=marks;
-    }
-
-    public boolean result() {
-        return marks>35;
+        TrafficSignal signal = TrafficSignal.YELLOW;
+        System.out.println(signal);
     }
 }
 
-public class enumDemo {
-
+public class EnumDemo {
     public static void main(String[] args) {
 
-        Student s=Student.MATHS;
-        for(Student s1:Student.values()){
-            System.out.println(s1+" "+s1.result());
+        TrafficSignal signal = TrafficSignal.YELLOW;
+        System.out.println(signal.ordinal());
+    }
+}
+
+public class EnumDemo {
+    public static void main(String[] args) {
+
+        TrafficSignal signal = TrafficSignal.YELLOW;
+
+        System.out.println(signal.name());
+        System.out.println(signal);
+    }
+}
+
+public class EnumDemo {
+    public static void main(String[] args) {
+
+        TrafficSignal[] signalArr = TrafficSignal.values();
+        System.out.println(signalArr[1]);
+    }
+}
+
+public class EnumDemo {
+    public static void main(String[] args) {
+
+        for (TrafficSignal signal : TrafficSignal.values()) {
+            System.out.println(signal);
         }
     }
 }
