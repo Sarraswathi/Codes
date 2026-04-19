@@ -34,7 +34,7 @@ public class MapDemo {
             System.out.println(value);
         }
 
-        // entrySet (best practice)
+        // entrySet
         for (Map.Entry<Integer, String> entry : students.entrySet()) {
             System.out.println(entry.getKey() + " " + entry.getValue());
         }
